@@ -1,6 +1,5 @@
 
-# Check if numbers are multiples of 10. 
-
+# Check if numbers are divisible by 10. 
 def divisible_by_ten(nums): 
   count = 0 
   for num in nums: 
@@ -9,3 +8,12 @@ def divisible_by_ten(nums):
   return count 
 
 print(divisible_by_ten([20, 25, 30, 35, 40]))
+
+
+# Add a greeting to each name. 
+def add_greetings(names): 
+  lst = [] 
+  lst = ["Hello, " + name for name in names] 
+  return lst 
+
+print(add_greetings(["Owen", "Max", "Sophie"]))
