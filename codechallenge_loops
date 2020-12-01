@@ -90,3 +90,26 @@ def exponents(bases, powers):
   return raised 
 
 print(exponents([2, 3, 4], [1, 2, 3]))
+
+
+# Return the list whose sum of values is greater. 
+def larger_sum(lst1, lst2): 
+  # sum1 = sum(lst1) 
+  # sum2 = sum(lst2) 
+  sum1 = 0
+  sum2 = 0 
+
+  for i in range(len(lst1)): 
+    sum1 += lst1[i]
+
+  for x in range(len(lst2)): 
+    sum2 += lst2[i]
+
+  if sum1 == sum2: 
+    return lst1 
+  elif sum1 > sum2: 
+    return lst1
+  else: 
+    return lst2
+
+print(larger_sum([1, 9, 5], [2, 3, 7]))
