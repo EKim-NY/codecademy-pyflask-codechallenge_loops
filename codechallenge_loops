@@ -16,4 +16,37 @@ def add_greetings(names):
   lst = ["Hello, " + name for name in names] 
   return lst 
 
-print(add_greetings(["Owen", "Max", "Sophie"]))
+print(add_greetings(["Owen", "Max", "Sophie"])
+
+
+# Delete starting even numbers using .pop() which returns a value. 
+# Using a FOR loop will cause indexing errors b/c the indexes change with each slice. 
+
+my_lst = [4, 8, 10, 11, 12, 15]
+my_lst2 = [4, 8, 10] 
+
+def delete_starting_evens(lst): 
+  while len(lst) >= 1: 
+    if lst[0] % 2 == 0: 
+      front_even_value = lst.pop(0)
+      # lst = lst[1:]
+      print("Removed front even value ", front_even_value, " New list: ", lst)
+    else: 
+      continue
+    
+  return lst 
+
+print("List", delete_starting_evens(my_lst))
+
+# Delete starting even numbers using a WHILE loop. Why does program keep running in Repl.it? Output is as expected. 
+
+def delete_starting_evens(lst):
+    while len(lst) >= 1: 
+        if lst[0] % 2 == 0: 
+            lst = lst[1:]
+            print("New list", lst) 
+        else:    
+            continue
+    return lst
+
+print("List 2", delete_starting_evens(my_lst2))
