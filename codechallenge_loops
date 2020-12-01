@@ -79,3 +79,14 @@ def odd_indices(lst):
   return lst_odd_index
 
 print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+
+# Return the values of bases raised to their respective powers. 
+def exponents(bases, powers): 
+  raised = []
+  for base in bases: 
+    for power in powers: 
+      raised.append(base ** power)
+  return raised 
+
+print(exponents([2, 3, 4], [1, 2, 3]))
