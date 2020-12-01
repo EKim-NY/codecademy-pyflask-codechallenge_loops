@@ -71,3 +71,11 @@ def odd_indices(lst):
   return lst_odd_index 
 
 print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+# Obtain the same result by using a list comprehension and by introducing a step as a range parameter.
+
+def odd_indices(lst): 
+  lst_odd_index = [lst[i] for i in range(1, len(lst), 2)]
+  return lst_odd_index
+
+print(odd_indices([4, 3, 7, 10, 11, -2]))
