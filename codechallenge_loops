@@ -142,3 +142,26 @@ def over_nine_thousand(lst):
   return sum
 
 print(over_nine_thousand([8000, 900, 120, 5000]))
+
+
+# Find the maximum value using iteration. 
+def max_num(nums): 
+
+  for i in range(len(nums)-1): 
+    if nums[i] < nums[i+1]: 
+      max = nums[i+1]
+    else: 
+      max = nums[i]
+    i += 1 
+  return max 
+
+print(max_num([50, -10, 0, 75, 20]))
+
+# for i = 0 to 4: 
+# i     max 
+# 0     50 
+# 1     0 
+# 2     75 
+# 3     75 
+
+# max = 75 
