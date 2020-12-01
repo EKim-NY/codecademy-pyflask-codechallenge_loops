@@ -180,3 +180,25 @@ def same_values(lst1, lst2):
 
 
 print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+
+
+# Check if the values of a list and a reversed list are the same. 
+def reversed_list(lst1, lst2): 
+  len_lst2 = len(lst2) 
+  for i in range(len(lst1)): 
+    if lst1[i] == lst2[len_lst2-1]
+
+print(reversed_list([1, 2, 3], [3, 2, 1]))
+print(reversed_list([1, 5, 3], [3, 2, 1]))
+
+# Why (len_st2 - i - 1)? 
+# index: 0 1 2 
+# lst 1: 1 2 3 
+# lst 2: 3 2 1   
+
+# i       : 0 1 2 
+# lst1[i] : 1 2 3 
+# lst2[len(lst2) - i - 1]: 
+# lst2[len(lst2) - 2]: 
+# (index):  2 1 0 
+# lst2[i]:  1 2 3 
